@@ -1,39 +1,10 @@
-{
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+[{"question":"Which type of logic circuits mostly involve clock signals?","answers":{"a":"Sequential Logic Circuits","b":"Combinational Logic Circuits","c":"Both a & b","d":"None of the above"},"correctAnswer":"a"},
+{"question":"Clock pulse of a specific duration is formed by which type of multivibrator?","answers":{"a":"Astable","b":"Bistable","c":"Monostable","d":"None of the above"},"correctAnswer":"c"},
+{"question":"Which waveform is a typical waveform used in digital systems?","answers":{"a":"Triangular waveform","b":"Rectangular waveform","c":"Square waveform","d":"Circular waveform"},"correctAnswer":"c"},
+{"question":"The waveform produced by a NAND gate is","answers":{"a":"Triangular","b":"Rectangular","c":"Square","d":"Circular"},"correctAnswer":"c"},
+{"question":"The number of output probes in 4-input NAND gate is","answers":{"a":"1","b":"2","c":"3","d":"4"},"correctAnswer":"a"},
+{"question":"The frequency of square wave formed by using NAND gate depends on","answers":{"a":"Resistor only.","b":"Capacitor only.","c":"Both Capacitor and resistor.","d":"None of the above."},"correctAnswer":"c"},
+{"question":"The pulse fall time is defined as the time taken by the pulse","answers":{"a":"To decrease from 90 percent to 10 percent of its normal amplitude.","b":"To decrease from 100 percent to 0 percent of its normal amplitude.","c":"To decrease from 100 percent to 10 percent of its normal amplitude.","d":"None of the above."},"correctAnswer":"a"},
+{"question":"With a 200 kHz clock frequency, eight bits can be serially entered into a shift register in","answers":{"a":"4 µs","b":"40 µs","c":"400 µs","d":"40 ms"},"correctAnswer":"b"},
+{"question":"NAND gate is preferred over Nor gate because","answers":{"a":"The logical effort for NAND gate is high.","b":"Delay for NAND gate is low.","c":"Area occupied by NAND gate is large.","d":"NAND gate increases the load at its output."},"correctAnswer":"b"},
+{"question":"The NAND function is a combination of two logic functions which are","answers":{"a":"AND function and NOT function are in parallel.","b":"AND function and NOT function are in series.","c":"OR function and NOT function are in parallel.","d":"OR function and NOT function are in series."},"correctAnswer":"b"}]

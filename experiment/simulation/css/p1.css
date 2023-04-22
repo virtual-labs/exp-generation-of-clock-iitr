@@ -1,0 +1,27 @@
+.p1 rect {
+  fill: #f2f2f2;
+}
+
+.p1 g polygon {
+  opacity: 1;
+}
+
+.p1 circle {
+  fill: #3c8dbc;
+  stroke: #f2f2f2;
+  stroke-width: 2;
+  filter: url(#dropshadow);
+}
+
+.p1 text {
+  font-size: 10px;
+  fill: black;
+  font-family: sans-serif;
+  font-weight: bolder;
+  -webkit-transition: all .1s ease-in-out;
+}
+
+.p1 text.active {
+  font-size: 15px;
+  -webkit-transition: all .3s ease-in-out;
+}
