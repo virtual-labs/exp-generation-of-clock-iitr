@@ -1,1 +1,1 @@
-### Aim of the experiment
+#### To design a clock generator using NAND gate
