@@ -2,7 +2,6 @@
 <br>
 <div style="text-align:justify">
 
-Click on **“Click Here”** in **Simulation tab**.  
 
 1.  Click on the **Component** button to place components on the table.
 
