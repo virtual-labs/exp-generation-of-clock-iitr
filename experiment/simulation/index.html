@@ -193,8 +193,8 @@
 
             <div class="bottom">
                 <div>
-                    <button id="check" onclick="checkCircuit()">Check Connection</button>
-                    <button id="reset" onclick="reload()">Reset</button>
+                    <button id="check" onclick="checkCircuit()" disabled>Check Connection</button>
+                    <button id="reset" onclick="reload()" disabled>Reset</button>
                 </div>
             </div>
         </div>
@@ -206,17 +206,18 @@
                         <button class="close-btn" id="close-btn"><span>&#10005</span></button>
                     </div>
                     <ol type="1" style="padding-left: 15px; padding-top:10px;text-align:left">
+                        <li>Click on the components button to place the component.</li>
                         <li>Make connections as per the circuit diagram and pin diagram.</li>
                         <li>Connect the C.R.O on output terminal of circuit.</li>
                         <figure>
                             <img src="./images/image001.jpg" style="height:180px;margin-left: 20px;">
-                            <figcaption style="text-align:center;">Fig. Circuit diagram of clock pulse using NAND gate</figcaption>
+                            <figcaption style="text-align:center;">Fig. 1 Circuit diagram of clock pulse using NAND gate</figcaption>
                           </figure>
                           <figure>
                             <img src="./images/image004.png" style="height:140px;margin-left:100px;">
-                            <figcaption style="text-align:center;">Fig. Circuit diagram of clock pulse using NAND gate</figcaption>
+                            <figcaption style="text-align:center;">Fig. 2 Circuit diagram of clock pulse using NAND gate</figcaption>
                           </figure>
-                        <li>Click on Check Connections button. If connections are right, click on ‘OK’, then Simulation will become active.</li>
+                        <li>Click on <b>'Check Connections'</b> button. If connections are right, click on ‘OK’, then Simulation will become active.</li>
                         <li>Connect CH1/CH2 of C.R.O. to output terminal of the circuit.</li>
                         <li>Observe output wave on C.R.O by adjusting C.R.O channel CH1/CH2 and TIME knobs.</li>
                         <li>Use X Shift and Y Shift buttons for wave shifting.</li>
@@ -238,16 +239,16 @@
                 <button class="right_btn" id="second">Components</button>
 
                 <div>
-                    <button onclick="breadboard()">Breadboard</button>
-                    <button onclick="supply()">Supply</button>
+                    <button class="cmpbutton" id="breadbutton" onclick="breadboard()">Breadboard</button>
+                    <button class="cmpbutton" id="supplybutton" onclick="supply()">Supply</button>
                 </div>
                 <div>
-                    <button onclick="c()">0.0001&mu;F Capacitor</button>
-                    <button onclick="r1()">3.5K&#8486; Resistor</button>
+                    <button class="cmpbutton" id="c1button" onclick="c()">0.0001&mu;F Capacitor</button>
+                    <button class="cmpbutton" id="r1button" onclick="r1()">3.5K&#8486; Resistor</button>
                 </div>
                 <div>
-                    <button onclick="ic7400()">IC 7400</button>
-                    <button onclick="cro()">CRO</button>
+                    <button class="cmpbutton" id="icbutton" onclick="ic7400()">IC 7400</button>
+                    <button class="cmpbutton" id="crobutton" onclick="cro()">CRO</button>
                 </div>
                 <div>
 
@@ -275,9 +276,9 @@
             </div>
         </div>
     </div>
-    <div id="copyright">
-        <h5>&copy; Copyright 2022 Virtual Labs, IIT Roorkee</h5>
-    </div>
+    <div>
+        <footer><b>&copy;</b> Copyright 2022 Virtual Labs, IIT Roorkee</footer>
+      </div>
 
 
     <!--CRO Codes-->

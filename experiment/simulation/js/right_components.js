@@ -12,13 +12,23 @@ close_btn.addEventListener('click', () => {
     First_data.classList.remove('visible')
 });
 
+const check_button = document.getElementById('check');
+const reset_button = document.getElementById('reset');
 
-
+const bread_but=document.getElementById("breadbutton");
+const supply_but=document.getElementById("supplybutton");
+const cro_but=document.getElementById("crobutton");
+const ic_but=document.getElementById("icbutton");
+const c1_but=document.getElementById("c1button");
+const r1_but=document.getElementById("r1button");
 
 // Components hide show code here
 function breadboard() {
     var x = document.getElementById("board");
     x.style.visibility = "visible";
+  
+    bread_but.disabled=true;
+   bread_but.style.cursor="not-allowed";
 
     var instance = new BoardController();
 
@@ -248,23 +258,31 @@ function breadboard() {
         instance.addEndPoint(4.2, 'board', 'row8', 'r199', [0, 0, 0, -1, 842.5, 282.5], 'blue');
         instance.addEndPoint(4.2, 'board', 'row8', 'r200', [0, 0, 0, -1, 856, 282.5], 'blue');
     }
+    disabledButton();
 }
 
 function supply() {
     var x = document.getElementById("supply");
     x.style.visibility = "visible";
     
+    supply_but.disabled=true;
+    supply_but.style.cursor="not-allowed";
+
     var supply = new BoardController();
     supply.setJsPlumbInstance(jsPlumb);
     supply.setCircuitContainer('mid');
 
     supply.addEndPoint(7, 'supply', 'VCC', 'VCC', [0, 0, -1, 0, 40, 45], 'blue','red');
     supply.addEndPoint(7, 'supply', 'GND', 'GND', [0, 0, 1, 0, 80, 45], 'red','black');
+    disabledButton();
 }
 
 function cro(){
     var x = document.getElementById("cro");
     x.style.visibility = "visible";
+
+    cro_but.disabled=true;
+    cro_but.style.cursor="not-allowed";
 
    var cro = new BoardController();
     cro.setJsPlumbInstance(jsPlumb);
@@ -272,15 +290,20 @@ function cro(){
 
     cro.addEndPoint(9, 'cro', 'cro_A', 'cro_A', [0, 0, 0, 0, 235, 158], 'red');
     cro.addEndPoint(9, 'cro', 'cro_B', 'cro_B', [0, 0, 0, 0, 270, 158], 'red');
-  
+    disabledButton();
 }
 
 function c(){
     var x = document.getElementById("c");
     x.style.visibility = "visible";
 
+
     var y= document.getElementById("c_label");
     y.style.visibility = "visible";
+
+    c1_but.disabled=true;
+    c1_but.style.cursor="not-allowed";
+
     var c = new BoardController();
     c.setJsPlumbInstance(jsPlumb);
     c.setCircuitContainer('mid');
@@ -294,15 +317,22 @@ function c(){
     c.addEndPoint(4.2, 'c', 'c_B', 'c_B02', [0, 0, 0, 1, 35, 124.5], 'red');
     c.addEndPoint(4.2, 'c', 'c_B', 'c_B03', [0, 0, 0, 1, 35, 138], 'red');
     c.addEndPoint(4.2, 'c', 'c_B', 'c_B04', [0, 0, 0, 1, 35, 151.5], 'red');
+    disabledButton();
 }
 
 function r1(){
+   
+
     var x = document.getElementById("r1");
     x.style.visibility = "visible";
     var y= document.getElementById("r11_label");
     y.style.visibility = "visible";
     var z= document.getElementById("r12_label");
     z.style.visibility = "visible";
+
+    r1_but.disabled=true;
+    r1_but.style.cursor="not-allowed";
+
     var r1 = new BoardController();
     r1.setJsPlumbInstance(jsPlumb);
     r1.setCircuitContainer('mid');
@@ -316,11 +346,17 @@ function r1(){
     r1.addEndPoint(4.2, 'r1', 'r1_B', 'r1_B02', [0, 0, 0, 1, 8, 125], 'red');
     r1.addEndPoint(4.2, 'r1', 'r1_B', 'r1_B03', [0, 0, 0, 1, 8, 138.5], 'red');
     r1.addEndPoint(4.2, 'r1', 'r1_B', 'r1_B04', [0, 0, 0, 1, 8, 152], 'red');
+    disabledButton();
 }
 
 function ic7400() {
+    
+   
     var x = document.getElementById("ic7400");
     x.style.visibility = "visible";
+
+    ic_but.disabled=true;
+    ic_but.style.cursor="not-allowed";
 
     var ic7400 = new BoardController();
     ic7400.setJsPlumbInstance(jsPlumb);
@@ -411,8 +447,25 @@ function ic7400() {
         ic7400.addEndPoint(4.2, 'ic7400', 'ic7400_GND', 'ic7400_GND04', [0, 0, 1, -1, 90, 138.5], 'red');
         ic7400.addEndPoint(4.2, 'ic7400', 'ic7400_GND', 'ic7400_GND05', [0, 0, 1, -1, 90, 152], 'red');
     }
-
+    disabledButton();
 }
 
+function disabledButton()
+{
 
+    if(reset_button.disabled)
+    {
+        reset_button.disabled=false;
+    }
+
+  if(window.getComputedStyle(document.getElementById('board')).visibility === "visible" && window.getComputedStyle(document.getElementById('r1')).visibility === "visible" && 
+   window.getComputedStyle(document.getElementById('ic7400')).visibility === "visible" && window.getComputedStyle(document.getElementById('supply')).visibility === "visible" && 
+  window.getComputedStyle(document.getElementById('c')).visibility === "visible" && window.getComputedStyle(document.getElementById('cro')).visibility === "visible" )
+  {
+  check_button.disabled=false;
+
+  
+   
+  }
+}
 
