@@ -1,0 +1,10 @@
+[{"question":"The logic NAND gate is the ________ form of AND gate.","answers":{"a":"Supplementary","b":"Complimentary"},"correctAnswer":"b"},
+{"question":"The small circle in the symbol of NAND gate and NOR gate is used to denote which gate?","answers":{"a":"AND gate","b":"OR gate","c":"XOR gate","d":"NOT gate"},"correctAnswer":"d"},
+{"question":"The Boolean expression for 4-input logic NAND gate is","answers":{"a":"(A.B.C.D)'","b":"(A+B+C+D)'","c":"(A'.B'.C'.D')","d":"(A.B)'+(C.D)'"},"correctAnswer":"a"},
+{"question":"Clock signal is a particular type of signal that oscillates between","answers":{"a":"Two high states","b":"Alternatively high and low states","c":"Two low states","d":"Consecutively two high and low states"},"correctAnswer":"b"},
+{"question":"For generating clock signal NAND gate works as","answers":{"a":"Amplifier","b":"Schmitt trigger","c":"Counter","d":"Decoder"},"correctAnswer":"b"},
+{"question":"In a 2-input NAND gate, the output logic 1 appears when","answers":{"a":"One input is high and other is low","b":"Both the inputs are low","c":"Both the inputs are high","d":"Never appears"},"correctAnswer":"b"},
+{"question":"Number of NAND gates required to get clock signal is/are","answers":{"a":"One","b":"Two","c":"Three","d":"Four"},"correctAnswer":"a"},
+{"question":"NAND gate means","answers":{"a":"Inversion followed by AND gate","b":"AND gate followed by an inverter","c":"AND gate followed by an OR gate","d":"None of these"},"correctAnswer":"b"},
+{"question":"Which type of energy is stored in a capacitor?","answers":{"a":"Kinetic energy","b":"Vibrational energy","c":"Potential energy","d":"Heat energy"},"correctAnswer":"c"},
+{"question":"CRO cannot measure directly","answers":{"a":"Voltage","b":"Frequency","c":"Current","d":"Phase angle between two voltages"},"correctAnswer":"c"}]
